@@ -17,7 +17,11 @@ public class Player_controler : MonoBehaviour {
     float groundRadius = 0.2f;
     public LayerMask whatIsGround;
     public float jumpForce = 700f;
+    float doubleJumpFacter = 0.7f;
 
+    public float fallMultiplier = 2.3f;
+
+    bool doubleJump = false;
     // Use this for initialization
     void Start () {
         anim = GetComponent<Animator>();
@@ -27,6 +31,11 @@ public class Player_controler : MonoBehaviour {
 	void FixedUpdate () {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         anim.SetBool("Grounded", grounded);
+
+        if (grounded)
+        {
+            doubleJump = false;
+        }
 
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
 
@@ -45,10 +54,23 @@ public class Player_controler : MonoBehaviour {
 
     void Update()
     {
-        if(grounded && Input.GetKeyDown(KeyCode.UpArrow))
+        if((grounded|| !doubleJump) && Input.GetKeyDown(KeyCode.UpArrow))
         {
             anim.SetBool("Grounded", false);
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            if(!doubleJump && !grounded)
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce * doubleJumpFacter));
+                doubleJump = true;
+            }
+            else
+            {
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+            }
+        }
+
+        if(GetComponent<Rigidbody2D>().velocity.y<0)
+        {
+            GetComponent<Rigidbody2D>().velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
     }
 
