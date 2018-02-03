@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -39,7 +40,16 @@ public class Player_controler : MonoBehaviour {
 
         anim.SetFloat("vSpeed", GetComponent<Rigidbody2D>().velocity.y);
 
-        float move = Input.GetAxis("Horizontal");
+        float move;
+        if (SceneManager.GetActiveScene().name == "life")
+        {
+            move = -1;
+        }
+        else
+        {
+            move = Input.GetAxis("Horizontal");
+        }
+        
 
         anim.SetFloat("Speed", Mathf.Abs(move));
         anim.SetBool("GameOver", gameOver);
