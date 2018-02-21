@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
+  - Death
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,9 +18,9 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - BackGround
   - Player
-  - 
+  - FrountThings
   - 
   - 
   - 
@@ -43,4 +46,7 @@ TagManager:
     locked: 0
   - name: Rabbit
     uniqueID: 2597785815
+    locked: 0
+  - name: Front
+    uniqueID: 3751569907
     locked: 0

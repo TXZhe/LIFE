@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: bab98b4df9119984d87f48abe6bc2e02
+timeCreated: 1518279940
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hair
+    21300002: body
+    21300004: head
+    21300006: larm
+    21300008: rarm
+    21300010: lleg
+    21300012: rleg
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 600
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hair
+      rect:
+        serializedVersion: 2
+        x: 97.14931
+        y: 2070.4812
+        width: 532.3758
+        height: 335.4143
+      alignment: 9
+      pivot: {x: 0.49936664, y: 0.49943846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: body
+      rect:
+        serializedVersion: 2
+        x: 753.5387
+        y: 1386.8204
+        width: 746.4641
+        height: 1020.49744
+      alignment: 9
+      pivot: {x: 0.4996371, y: 0.5004222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: head
+      rect:
+        serializedVersion: 2
+        x: 113.45429
+        y: 1507.3921
+        width: 448.45306
+        height: 510.11047
+      alignment: 9
+      pivot: {x: 0.50071174, y: 0.50010306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: larm
+      rect:
+        serializedVersion: 2
+        x: 130.9017
+        y: 515.33154
+        width: 323.42545
+        height: 871.4917
+      alignment: 9
+      pivot: {x: 0.49500835, y: 0.49818993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rarm
+      rect:
+        serializedVersion: 2
+        x: 602.3194
+        y: 535.35345
+        width: 254.91718
+        height: 743.03876
+      alignment: 9
+      pivot: {x: 0.4989093, y: 0.4988253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lleg
+      rect:
+        serializedVersion: 2
+        x: 1055.7181
+        y: 687.2044
+        width: 234.36475
+        height: 523.8123
+      alignment: 9
+      pivot: {x: 0.49615765, y: 0.49978882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rleg
+      rect:
+        serializedVersion: 2
+        x: 1367.0367
+        y: 714.6575
+        width: 189.83423
+        height: 511.82324
+      alignment: 9
+      pivot: {x: 0.4949753, y: 0.4949805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 99501989078162
+  assetBundleName: 
+  assetBundleVariant: 
